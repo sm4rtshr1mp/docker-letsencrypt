@@ -5,8 +5,8 @@ pull:
 	docker pull jrcs/letsencrypt-nginx-proxy-companion
 
 stop:
-	docker stop nginx-proxy lets-encrypt
-	docker rm nginx-proxy lets-encrypt
+	docker stop nginx-proxy nginx-proxy-letsencrypt
+	docker rm nginx-proxy nginx-proxy-letsencrypt
 
 start:
 	docker run --detach \
