@@ -23,6 +23,7 @@ start:
 			--name nginx-proxy-letsencrypt \
 			--volumes-from nginx-proxy \
 			--volume /var/run/docker.sock:/var/run/docker.sock:ro \
+			--volume /etc/acme.sh \
 			--env-file letsencrypt.env \
 			jrcs/letsencrypt-nginx-proxy-companion
 
